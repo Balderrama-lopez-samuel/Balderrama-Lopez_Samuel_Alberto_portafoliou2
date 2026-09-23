@@ -1,0 +1,27 @@
+# Cómo se publica el portafolio en Render como sitio estático.
+#
+# Render compila y publica solo la carpeta dist/: la versión minificada que
+# arma herramientas/dist.mjs. El HTML legible del repositorio no se sirve.
+
+services:
+  - type: web
+    name: portafolio-balderrama
+    runtime: static
+    buildCommand: npm ci && npm run dist
+    staticPublishPath: ./dist
+    headers:
+      # Ningún otro sitio puede meter el portafolio dentro de un iframe y
+      # hacerlo pasar por suyo. Van los dos: X-Frame-Options para navegadores
+      # viejos y frame-ancestors para los actuales.
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Content-Security-Policy
+        value: "frame-ancestors 'none'"
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
