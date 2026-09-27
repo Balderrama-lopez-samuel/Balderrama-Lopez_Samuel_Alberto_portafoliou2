@@ -1028,6 +1028,11 @@
   .estela-btn{background:#e01d0f;color:#fff;}
   @media (hover:hover) and (pointer:fine){ .estela-btn:hover{background:#ff2211;} }
   .estela-btn:focus-visible{outline:2px solid #ff5a4d;outline-offset:3px;}
+  /* Secundario: blanco con letra roja. Con #estela delante para ganarle
+     al tema oscuro, que pinta de verde los fondos claros. */
+  #estela .estela-btn-alt{background:#fff;color:#e01d0f;}
+  @media (hover:hover) and (pointer:fine){ #estela .estela-btn-alt:hover{background:#ffe9e7;} }
+  .estela-btn-alt:focus-visible{outline:2px solid #ff5a4d;outline-offset:3px;}
   @media (prefers-reduced-motion:reduce){ .estela-vista .estela-captura{transition:none;} }
 </style>
 <!-- Imágenes: no se arrastran al escritorio. El texto sí se puede
@@ -1786,7 +1791,7 @@ transform="translate(294.64 294.64) scale(0.6)"
       </a>
       <a href="https://webestela.onrender.com/sitio/index.html"
          target="_blank" rel="noopener noreferrer"
-         class="btn-social inline-flex items-center gap-2 rounded-lg bg-white/10 font-semibold px-5 py-3 text-sm border border-slate-200 hover:bg-white/20 transition"
+         class="btn-social estela-btn-alt inline-flex items-center gap-2 rounded-lg font-semibold px-5 py-3 text-sm transition"
          data-i18n="estela.site">
         Ver el sitio de Estela →
       </a>
