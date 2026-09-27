@@ -999,6 +999,37 @@
     .tcarta{transition:none;}
   }
 </style>
+<!-- =====================================================================
+     PROYECTO: ESTELA
+     La captura del simulador con el lector del personal encima, igual que
+     en el sitio de Estela. El rojo es el de su marca (#FF2211).
+     ===================================================================== -->
+<style id="estela-style">
+  .estela-grid{display:grid;gap:2.5rem;align-items:center;}
+  @media (min-width:900px){ .estela-grid{grid-template-columns:.95fr 1.05fr;} }
+
+  .estela-vista{position:relative;display:block;margin-bottom:1.5rem;border-radius:1rem;}
+  .estela-vista .estela-captura{
+    display:block;width:100%;height:auto;border-radius:1rem;
+    border:1px solid var(--line, rgba(148,163,184,.3));
+    box-shadow:0 18px 40px -18px rgba(0,0,0,.55);
+  }
+  .estela-vista .estela-lector{
+    position:absolute;right:-10px;bottom:-22px;width:24%;height:auto;
+    border-radius:14px;box-shadow:0 12px 28px -10px rgba(0,0,0,.6),0 0 0 4px #111;
+  }
+  .estela-vista:focus-visible{outline:2px solid #ff5a4d;outline-offset:4px;}
+  @media (hover:hover) and (pointer:fine){
+    .estela-vista .estela-captura{transition:transform 260ms cubic-bezier(.23,1,.32,1);}
+    .estela-vista:hover .estela-captura{transform:scale(1.01);}
+  }
+  @media (max-width:640px){ .estela-vista .estela-lector{right:6px;bottom:-14px;width:28%;} }
+
+  .estela-btn{background:#e01d0f;color:#fff;}
+  @media (hover:hover) and (pointer:fine){ .estela-btn:hover{background:#ff2211;} }
+  .estela-btn:focus-visible{outline:2px solid #ff5a4d;outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){ .estela-vista .estela-captura{transition:none;} }
+</style>
 <!-- Imágenes: no se arrastran al escritorio. El texto sí se puede
      seleccionar: copiar el correo o un párrafo es uso normal de un portafolio. -->
 <style id="proteccion">
@@ -1691,6 +1722,79 @@ transform="translate(294.64 294.64) scale(0.6)"
   </div>
 </section>
 
+<!-- ===================== PROYECTO: ESTELA ===================== -->
+<section id="estela" class="bg-white border-y border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="estela-grid">
+      <div>
+        <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide" data-i18n="estela.eyebrow">Proyecto personal</p>
+        <div class="project-head mt-1">
+          <h2 class="text-2xl font-extrabold">Estela</h2>
+          <img id="estelaLogo" class="project-logo" src="assets/estela-logo.svg"
+               width="64" height="64" alt="Logotipo de Estela">
+          <span class="tahur-obra" data-i18n="estela.badge">En diseño</span>
+        </div>
+
+        <p class="project-meta">
+          <span data-i18n="estela.metaLabel">Creación del proyecto</span>
+          <time datetime="2026-09-26" data-i18n="estela.metaDate">26 de septiembre de 2026</time>
+          <span aria-hidden="true">·</span>
+          <span>Bakoware</span>
+        </p>
+
+        <p class="mt-4 text-slate-600 max-w-2xl" data-i18n="estela.body">
+          Software de inventario y trazabilidad para plantas de carne. Cada bolsa, caja y pallet
+          lleva un código único: con un escaneo se sabe dónde está, en qué estado, qué historia
+          tiene y quién es su responsable, de la canal al embarque.
+        </p>
+
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3">
+          <li class="rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-600" data-i18n="estela.f1">Trazabilidad desde la canal: sacrificio, proceso y empaque.</li>
+          <li class="rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-600" data-i18n="estela.f2">Custodia con responsable y tiempo en cada movimiento.</li>
+          <li class="rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-600" data-i18n="estela.f3">Merma medible con básculas conectadas y balance de masa.</li>
+          <li class="rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-600" data-i18n="estela.f4">Opera sin internet dentro de los cuartos fríos.</li>
+        </ul>
+
+        <ul class="tech-tags mt-5" aria-label="Stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li><li>Web Audio</li><li>Render</li></ul>
+      </div>
+
+      <div>
+        <!-- La captura abre el simulador: es lo que más dice del proyecto. -->
+        <a class="estela-vista" href="https://webestela.onrender.com/simulador/index.html"
+           target="_blank" rel="noopener noreferrer">
+          <img id="estelaShot" class="estela-captura" src="assets/estela-simulador.png"
+               width="1440" height="860" loading="lazy" decoding="async"
+               alt="Simulador de Estela: vista desde arriba de un complejo cárnico con recepción, despiece, empaque, armado de pallets, cámara fría y andén.">
+          <img id="estelaLector" class="estela-lector" src="assets/estela-lector.png"
+               width="406" height="774" loading="lazy" decoding="async"
+               alt="Lector de Estela mostrando la ficha de un pallet: código, cajas registradas y contenido.">
+        </a>
+        <p class="text-sm text-slate-600" data-i18n="estela.sim">
+          Simulador jugable: dirige un complejo cárnico, pide canales al rastro, despieza, empaca,
+          guarda en frío y surte pedidos. Tu gente no es perfecta: usa el lector de Estela para
+          investigar lo que quedó abandonado.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a href="https://webestela.onrender.com/simulador/index.html"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-social estela-btn inline-flex items-center gap-2 rounded-lg font-semibold px-5 py-3 text-sm transition">
+        <span data-i18n="estela.play">Jugar el simulador</span>
+        <span aria-hidden="true">→</span>
+      </a>
+      <a href="https://webestela.onrender.com/sitio/index.html"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-social inline-flex items-center gap-2 rounded-lg bg-white/10 font-semibold px-5 py-3 text-sm border border-slate-200 hover:bg-white/20 transition"
+         data-i18n="estela.site">
+        Ver el sitio de Estela →
+      </a>
+    </div>
+    <p class="tahur-nota" data-i18n="estela.nota">Prototipos de diseño alojados en Render (plan gratuito): la primera carga puede tardar hasta un minuto.</p>
+  </div>
+</section>
+
 <!-- ============================================================
      EDITA AQUI: ENLACES DE ENTREGAS POR UNIDAD (4 enlaces)
      Reemplaza cada [URL-UNIDAD-X] por la URL real de Render.
@@ -1705,7 +1809,7 @@ transform="translate(294.64 294.64) scale(0.6)"
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-orange-300 uppercase" data-i18n="deliv.u1">Unidad 1</p>
         <p class="font-semibold mt-1" data-i18n="deliv.u1t">Portafolio estático (HTML + Tailwind)</p>
-        <a href="https://apweb.sistemasprado.xyz/[URL-UNIDAD-1]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-1]</a>
+        <a href="https://practica2-blsa.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">practica2-blsa.onrender.com</a>
       </li>
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-emerald-300 uppercase" data-i18n="deliv.u2">Unidad 2</p>
@@ -1823,6 +1927,22 @@ transform="translate(294.64 294.64) scale(0.6)"
       'tahur.cta': 'Jugar Tahúr',
       'tahur.nota': 'Versión en desarrollo alojada en Render (plan gratuito): la primera carga puede tardar hasta un minuto.',
       'tahur.logoAlt': 'Logotipo de Tahúr',
+      'estela.eyebrow': 'Proyecto personal',
+      'estela.badge': 'En diseño',
+      'estela.metaLabel': 'Creación del proyecto',
+      'estela.metaDate': '26 de septiembre de 2026',
+      'estela.body': 'Software de inventario y trazabilidad para plantas de carne. Cada bolsa, caja y pallet lleva un código único: con un escaneo se sabe dónde está, en qué estado, qué historia tiene y quién es su responsable, de la canal al embarque.',
+      'estela.f1': 'Trazabilidad desde la canal: sacrificio, proceso y empaque.',
+      'estela.f2': 'Custodia con responsable y tiempo en cada movimiento.',
+      'estela.f3': 'Merma medible con básculas conectadas y balance de masa.',
+      'estela.f4': 'Opera sin internet dentro de los cuartos fríos.',
+      'estela.sim': 'Simulador jugable: dirige un complejo cárnico, pide canales al rastro, despieza, empaca, guarda en frío y surte pedidos. Tu gente no es perfecta: usa el lector de Estela para investigar lo que quedó abandonado.',
+      'estela.play': 'Jugar el simulador',
+      'estela.site': 'Ver el sitio de Estela →',
+      'estela.nota': 'Prototipos de diseño alojados en Render (plan gratuito): la primera carga puede tardar hasta un minuto.',
+      'estela.logoAlt': 'Logotipo de Estela',
+      'estela.shotAlt': 'Simulador de Estela: vista desde arriba de un complejo cárnico con recepción, despiece, empaque, armado de pallets, cámara fría y andén.',
+      'estela.lectorAlt': 'Lector de Estela mostrando la ficha de un pallet: código, cajas registradas y contenido.',
 
       'deliv.eyebrow': 'Evidencia por unidad',
       'deliv.title': 'Mis 4 entregas publicadas',
@@ -1913,6 +2033,22 @@ transform="translate(294.64 294.64) scale(0.6)"
       'tahur.cta': 'Play Tahúr',
       'tahur.nota': 'Development build hosted on Render (free plan): the first load can take up to a minute.',
       'tahur.logoAlt': 'Tahúr logo',
+      'estela.eyebrow': 'Personal Project',
+      'estela.badge': 'In design',
+      'estela.metaLabel': 'Project created',
+      'estela.metaDate': 'September 26, 2026',
+      'estela.body': 'Inventory and traceability software for meat processing plants. Every bag, box and pallet carries a unique code: one scan tells you where it is, its condition, its history and who is responsible for it, from carcass to shipping.',
+      'estela.f1': 'Traceability from the carcass: slaughter, processing and packing.',
+      'estela.f2': 'Chain of custody with an owner and a timestamp on every move.',
+      'estela.f3': 'Measurable shrink with connected scales and mass balance.',
+      'estela.f4': 'Works offline inside the cold rooms.',
+      'estela.sim': 'Playable simulator: run a meat plant, order carcasses from the slaughterhouse, cut, pack, store in the cold room and fill orders. Your crew is not perfect: use the Estela scanner to track down abandoned product.',
+      'estela.play': 'Play the simulator',
+      'estela.site': 'Visit the Estela site →',
+      'estela.nota': 'Design prototypes hosted on Render (free plan): the first load can take up to a minute.',
+      'estela.logoAlt': 'Estela logo',
+      'estela.shotAlt': 'Estela simulator: top-down view of a meat plant with receiving, cutting, packing, pallet building, cold room and loading dock.',
+      'estela.lectorAlt': 'Estela scanner showing a pallet record: code, registered boxes and contents.',
 
       'deliv.eyebrow': 'Evidence by unit',
       'deliv.title': 'My 4 published deliverables',
@@ -1951,6 +2087,9 @@ transform="translate(294.64 294.64) scale(0.6)"
   var gixLogo = document.getElementById('gixLogo');
   var gixBanner = document.getElementById('gixBanner');
   var tahurLogo = document.getElementById('tahurLogo');
+  var estelaLogo = document.getElementById('estelaLogo');
+  var estelaShot = document.getElementById('estelaShot');
+  var estelaLector = document.getElementById('estelaLector');
   var brandLink = document.querySelector('.brand-link');
   var metaDesc = document.querySelector('meta[name="description"]');
 
@@ -1977,6 +2116,9 @@ transform="translate(294.64 294.64) scale(0.6)"
     if (gixLogo) gixLogo.setAttribute('alt', t['gix.logoAlt']);
     if (gixBanner) gixBanner.setAttribute('alt', t['gix.bannerAlt']);
     if (tahurLogo) tahurLogo.setAttribute('alt', t['tahur.logoAlt']);
+    if (estelaLogo) estelaLogo.setAttribute('alt', t['estela.logoAlt']);
+    if (estelaShot) estelaShot.setAttribute('alt', t['estela.shotAlt']);
+    if (estelaLector) estelaLector.setAttribute('alt', t['estela.lectorAlt']);
     if (brandLink) brandLink.setAttribute('aria-label', t['brand.label']);
 
     if (toggle) {
