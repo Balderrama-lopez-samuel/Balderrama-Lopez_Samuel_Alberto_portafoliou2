@@ -1802,9 +1802,12 @@ transform="translate(294.64 294.64) scale(0.6)"
 
 <!-- ============================================================
      EDITA AQUI: ENLACES DE ENTREGAS POR UNIDAD (4 enlaces)
-     Reemplaza cada [URL-UNIDAD-X] por la URL real de Render.
+     Cada práctica lleva dos botones: Render y Ver GitHub.
+     Reemplaza [URL-RENDER-UX] y [URL-GITHUB-UX] por las URL reales.
+     Para otra práctica, copia un bloque <div class="mt-3 flex ...">.
      ============================================================ -->
 <section id="entregas" class="bg-ink text-white">
+  <svg class="hidden" aria-hidden="true"><symbol id="icono-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="icono-render" viewBox="0 0 24 24"><path fill="currentColor" d="M18.263.007c-3.121-.147-5.744 2.109-6.192 5.082-.018.138-.045.272-.067.405-.696 3.703-3.936 6.507-7.827 6.507-1.388 0-2.691-.356-3.825-.979a.2024.2024 0 0 0-.302.178V24H12v-8.999c0-1.656 1.338-3 2.987-3h2.988c3.382 0 6.103-2.817 5.97-6.244-.12-3.084-2.61-5.603-5.682-5.75"/></symbol></svg>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <p class="text-brand-300 font-semibold text-xs uppercase tracking-wide" data-i18n="deliv.eyebrow">Evidencia por unidad</p>
     <h2 class="text-2xl font-extrabold mt-1" data-i18n="deliv.title">Mis 4 entregas publicadas</h2>
@@ -1814,24 +1817,48 @@ transform="translate(294.64 294.64) scale(0.6)"
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-orange-300 uppercase" data-i18n="deliv.u1">Unidad 1</p>
         <p class="font-semibold mt-1" data-i18n="deliv.u1t">Portafolio estático (HTML + Tailwind)</p>
-        <a href="https://portafolio-sabl.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">Práctica 1 [portafolio-sabl.onrender.com]</a>
-        <a href="https://practica2-blsa.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">Práctica 2 [practica2-blsa.onrender.com]</a>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 1</span>
+          <a href="https://portafolio-sabl.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://github.com/Balderrama-lopez-samuel/portafolio-SABL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 2</span>
+          <a href="https://practica2-blsa.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://github.com/Balderrama-lopez-samuel/practica2-BLSA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
       </li>
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-emerald-300 uppercase" data-i18n="deliv.u2">Unidad 2</p>
         <p class="font-semibold mt-1"><span data-i18n="deliv.u2t">App Django + MySQL en Render</span> <span class="text-blue-300">(/admin/ y /servicios/)</span></p>
-        <a href="https://miproyecto-django-blsa.onrender.com/" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">Práctica 1 [miproyecto-django-blsa.onrender.com]</a>
-        <a href="https://miproyecto-django-blsa.onrender.com/" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">Práctica 2 [miproyecto-django-blsa.onrender.com]</a>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 1</span>
+          <a href="https://miproyecto-django-blsa.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://github.com/Balderrama-lopez-samuel/miproyecto-django_BLSA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 2</span>
+          <a href="https://miproyecto-django-blsa.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://github.com/Balderrama-lopez-samuel/miproyecto-django_BLSA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
       </li>
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-blue-300 uppercase" data-i18n="deliv.u3">Unidad 3</p>
         <p class="font-semibold mt-1" data-i18n="deliv.u3t">CRUD dinámico con login y sesiones</p>
-        <a href="https://apweb.sistemasprado.xyz/[URL-UNIDAD-3]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-3]</a>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 1</span>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
       </li>
       <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
         <p class="text-xs font-bold text-purple-300 uppercase" data-i18n="deliv.u4">Unidad 4</p>
         <p class="font-semibold mt-1" data-i18n="deliv.u4t">Proyecto integrador final</p>
-        <a href="https://apweb.sistemasprado.xyz/[URL-UNIDAD-4]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-4]</a>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="text-sm font-semibold text-slate-300 mr-1">Práctica 1</span>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-render"/></svg>Render</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-purple-700 bg-purple-900 hover:bg-purple-800 px-3 py-1.5 text-xs font-semibold text-white transition"><svg class="w-4 h-4 shrink-0" aria-hidden="true"><use href="#icono-github"/></svg>Ver GitHub</a>
+        </div>
       </li>
     </ul>
   </div>
