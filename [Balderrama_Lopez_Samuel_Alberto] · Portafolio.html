@@ -1809,7 +1809,13 @@ transform="translate(294.64 294.64) scale(0.6)"
     <li class="rounded-xl border border-slate-200 bg-white p-5 flex flex-col">
       <h3 class="text-lg font-bold">Gixson</h3>
       <p class="mt-2 text-sm text-slate-600" data-i18n="gixson.body">Marca de soluciones tecnológicas para pequeños y medianos negocios: sitios web, tiendas en línea con pagos y envíos, ERP, CRM, recursos humanos y sistemas a la medida, cada uno con un panel para que el cliente lo maneje.</p>
+      <p class="mt-2 text-sm text-slate-600" data-i18n="gixson.story">Es la página donde presentamos la marca y la serie de productos Gix, como GixPanel. Gixson nace en 2023, cuando empecé a desarrollar software dentro de Tecnología AGS en Google Drive, con Excel y macros.</p>
       <ul class="tech-tags mt-4" aria-label="Stack"><li>Astro</li><li>Tailwind</li><li>PostgreSQL</li></ul>
+      <div class="mt-4 rounded-lg border border-slate-200 overflow-hidden">
+        <img id="gixsonShot" class="project-shot" src="assets/gixson-portada.png"
+             width="1332" height="603" loading="lazy" decoding="async"
+             alt="Portada de Gixson: el lema «Tu negocio, en línea.», las soluciones Sitios web, E-commerce, ERP, CRM y Recursos humanos, y la mascota Gix sobre una plataforma isométrica.">
+      </div>
       <div class="mt-auto pt-4">
         <a href="https://gixson.com" target="_blank" rel="noopener noreferrer"
            class="btn-social inline-flex items-center gap-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 text-sm transition"
@@ -2037,6 +2043,8 @@ transform="translate(294.64 294.64) scale(0.6)"
       'web.eyebrow': 'Proyectos en línea · Bakoware',
       'web.title': 'Sitios en producción',
       'gixson.body': 'Marca de soluciones tecnológicas para pequeños y medianos negocios: sitios web, tiendas en línea con pagos y envíos, ERP, CRM, recursos humanos y sistemas a la medida, cada uno con un panel para que el cliente lo maneje.',
+      'gixson.story': 'Es la página donde presentamos la marca y la serie de productos Gix, como GixPanel. Gixson nace en 2023, cuando empecé a desarrollar software dentro de Tecnología AGS en Google Drive, con Excel y macros.',
+      'gixson.shotAlt': 'Portada de Gixson: el lema «Tu negocio, en línea.», las soluciones Sitios web, E-commerce, ERP, CRM y Recursos humanos, y la mascota Gix sobre una plataforma isométrica.',
       'gixson.cta': 'Visitar gixson.com →',
       'playera.body': 'Marketplace de prendas personalizadas en Hermosillo, Sonora: el cliente prueba su propio logo sobre la prenda antes de pagar con tarjeta, OXXO o PayPal, y el equipo da seguimiento al pedido hasta la entrega desde un panel por roles.',
       'playera.cta': 'Visitar playerafacil.com →',
@@ -2155,6 +2163,8 @@ transform="translate(294.64 294.64) scale(0.6)"
       'web.eyebrow': 'Live projects · Bakoware',
       'web.title': 'Sites in production',
       'gixson.body': 'A technology brand for small and medium businesses: websites, online stores with payments and shipping, ERP, CRM, HR and custom systems, each with a dashboard the client runs on their own.',
+      'gixson.story': 'This is where we present the brand and the Gix product line, such as GixPanel. Gixson was born in 2023, when I started building software inside Tecnología AGS on Google Drive, with Excel and macros.',
+      'gixson.shotAlt': 'Gixson home page: the tagline “Your business, online.”, the Websites, E-commerce, ERP, CRM and HR solutions, and the Gix mascot on an isometric platform.',
       'gixson.cta': 'Visit gixson.com →',
       'playera.body': 'A custom apparel marketplace in Hermosillo, Sonora: customers try their own logo on the garment before paying by card, OXXO or PayPal, and the team tracks each order to delivery from a role-based dashboard.',
       'playera.cta': 'Visit playerafacil.com →',
@@ -2203,6 +2213,7 @@ transform="translate(294.64 294.64) scale(0.6)"
   var tahurLogo = document.getElementById('tahurLogo');
   var estelaLogo = document.getElementById('estelaLogo');
   var estelaShot = document.getElementById('estelaShot');
+  var gixsonShot = document.getElementById('gixsonShot');
   var playeraShot = document.getElementById('playeraShot');
   var gixguardLogo = document.getElementById('gixguardLogo');
   var gixguardShot = document.getElementById('gixguardShot');
@@ -2235,6 +2246,7 @@ transform="translate(294.64 294.64) scale(0.6)"
     if (tahurLogo) tahurLogo.setAttribute('alt', t['tahur.logoAlt']);
     if (estelaLogo) estelaLogo.setAttribute('alt', t['estela.logoAlt']);
     if (estelaShot) estelaShot.setAttribute('alt', t['estela.shotAlt']);
+    if (gixsonShot) gixsonShot.setAttribute('alt', t['gixson.shotAlt']);
     if (playeraShot) playeraShot.setAttribute('alt', t['playera.shotAlt']);
     if (gixguardLogo) gixguardLogo.setAttribute('alt', t['gixguard.logoAlt']);
     if (gixguardShot) gixguardShot.setAttribute('alt', t['gixguard.shotAlt']);
