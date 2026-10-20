@@ -1800,6 +1800,57 @@ transform="translate(294.64 294.64) scale(0.6)"
   </div>
 </section>
 
+<!-- ===================== PROYECTOS EN LÍNEA: GIXSON Y PLAYERAFÁCIL ===================== -->
+<section id="gixson" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide" data-i18n="web.eyebrow">Proyectos en línea · Bakoware</p>
+  <h2 class="text-2xl font-extrabold mt-1" data-i18n="web.title">Sitios en producción</h2>
+
+  <ul class="mt-6 grid sm:grid-cols-2 gap-4">
+    <li class="rounded-xl border border-slate-200 bg-white p-5 flex flex-col">
+      <h3 class="text-lg font-bold">Gixson</h3>
+      <p class="mt-2 text-sm text-slate-600" data-i18n="gixson.body">Marca de soluciones tecnológicas para pequeños y medianos negocios: sitios web, tiendas en línea con pagos y envíos, ERP, CRM, recursos humanos y sistemas a la medida, cada uno con un panel para que el cliente lo maneje.</p>
+      <ul class="tech-tags mt-4" aria-label="Stack"><li>Astro</li><li>Tailwind</li><li>PostgreSQL</li></ul>
+      <div class="mt-auto pt-4">
+        <a href="https://gixson.com" target="_blank" rel="noopener noreferrer"
+           class="btn-social inline-flex items-center gap-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 text-sm transition"
+           data-i18n="gixson.cta">Visitar gixson.com →</a>
+      </div>
+    </li>
+    <li class="rounded-xl border border-slate-200 bg-white p-5 flex flex-col">
+      <h3 class="text-lg font-bold">PlayeraFácil</h3>
+      <p class="mt-2 text-sm text-slate-600" data-i18n="playera.body">Marketplace de prendas personalizadas en Hermosillo, Sonora: el cliente prueba su propio logo sobre la prenda antes de pagar con tarjeta, OXXO o PayPal, y el equipo da seguimiento al pedido hasta la entrega desde un panel por roles.</p>
+      <ul class="tech-tags mt-4" aria-label="Stack"><li>Astro</li><li>Alpine.js</li><li>PostgreSQL</li></ul>
+      <div class="mt-4 rounded-lg border border-slate-200 overflow-hidden">
+        <img id="playeraShot" class="project-shot" src="assets/playerafacil-probador.png"
+             width="1332" height="600" loading="lazy" decoding="async"
+             alt="Portada de PlayeraFácil: el lema «¡Hagamos playera tu idea!», los botones Prueba tu logo y Ver catálogo, y una polo negra con un logo en el pecho y selector de color.">
+      </div>
+      <div class="mt-auto pt-4">
+        <a href="https://playerafacil.com" target="_blank" rel="noopener noreferrer"
+           class="btn-social inline-flex items-center gap-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 text-sm transition"
+           data-i18n="playera.cta">Visitar playerafacil.com →</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- GixGuard es un servicio interno (no tiene URL pública): por eso lleva captura y no botón -->
+  <div class="mt-4 rounded-xl border border-slate-200 bg-white p-5">
+    <div class="project-head">
+      <h3 class="text-lg font-bold">GixGuard</h3>
+      <img id="gixguardLogo" class="project-logo" src="assets/gixguard-logo.svg"
+           width="200" height="200" alt="Logotipo de GixGuard">
+    </div>
+    <p class="mt-2 text-sm text-slate-600 max-w-2xl" data-i18n="gixguard.body">Servicio de seguridad de Bakoware que protege a varias aplicaciones a la vez, cada una con su propia llave: certifica las imágenes que suben los usuarios, detecta fuerza bruta, escaneos, bots y spam, bloquea IPs y activa un escudo anti-DDoS por cliente. Cada app lo ve como una pestaña de Seguridad en su panel.</p>
+    <ul class="tech-tags mt-4" aria-label="Stack"><li>Node.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li></ul>
+    <div class="mt-4 rounded-lg border border-slate-200 overflow-hidden">
+      <img id="gixguardShot" class="project-shot" src="assets/gixguard-panel.png"
+           width="1348" height="543" loading="lazy" decoding="async"
+           alt="Panel de GixGuard en modo Vigilando: peticiones por minuto, IPs bloqueadas, estado del servicio, gráfica de tráfico de 24 horas y control del escudo anti-DDoS.">
+    </div>
+  </div>
+  <p class="tahur-nota" data-i18n="web.nota">Capturas de cada proyecto.</p>
+</section>
+
 <!-- ============================================================
      EDITA AQUI: ENLACES DE ENTREGAS POR UNIDAD (4 enlaces)
      Cada práctica lleva dos botones: Render y Ver GitHub.
@@ -1983,6 +2034,18 @@ transform="translate(294.64 294.64) scale(0.6)"
       'estela.shotAlt': 'Simulador de Estela: vista desde arriba de un complejo cárnico con recepción, despiece, empaque, armado de pallets, cámara fría y andén.',
       'estela.lectorAlt': 'Lector de Estela mostrando la ficha de un pallet: código, cajas registradas y contenido.',
 
+      'web.eyebrow': 'Proyectos en línea · Bakoware',
+      'web.title': 'Sitios en producción',
+      'gixson.body': 'Marca de soluciones tecnológicas para pequeños y medianos negocios: sitios web, tiendas en línea con pagos y envíos, ERP, CRM, recursos humanos y sistemas a la medida, cada uno con un panel para que el cliente lo maneje.',
+      'gixson.cta': 'Visitar gixson.com →',
+      'playera.body': 'Marketplace de prendas personalizadas en Hermosillo, Sonora: el cliente prueba su propio logo sobre la prenda antes de pagar con tarjeta, OXXO o PayPal, y el equipo da seguimiento al pedido hasta la entrega desde un panel por roles.',
+      'playera.cta': 'Visitar playerafacil.com →',
+      'playera.shotAlt': 'Portada de PlayeraFácil: el lema «¡Hagamos playera tu idea!», los botones Prueba tu logo y Ver catálogo, y una polo negra con un logo en el pecho y selector de color.',
+      'gixguard.body': 'Servicio de seguridad de Bakoware que protege a varias aplicaciones a la vez, cada una con su propia llave: certifica las imágenes que suben los usuarios, detecta fuerza bruta, escaneos, bots y spam, bloquea IPs y activa un escudo anti-DDoS por cliente. Cada app lo ve como una pestaña de Seguridad en su panel.',
+      'gixguard.logoAlt': 'Logotipo de GixGuard',
+      'gixguard.shotAlt': 'Panel de GixGuard en modo Vigilando: peticiones por minuto, IPs bloqueadas, estado del servicio, gráfica de tráfico de 24 horas y control del escudo anti-DDoS.',
+      'web.nota': 'Capturas de cada proyecto.',
+
       'deliv.eyebrow': 'Evidencia por unidad',
       'deliv.title': 'Mis 4 entregas publicadas',
       'deliv.body': 'Cada enlace lleva a la versión pública que entregué al cerrar esa Unidad, sobre el mismo proyecto.',
@@ -2089,6 +2152,18 @@ transform="translate(294.64 294.64) scale(0.6)"
       'estela.shotAlt': 'Estela simulator: top-down view of a meat plant with receiving, cutting, packing, pallet building, cold room and loading dock.',
       'estela.lectorAlt': 'Estela scanner showing a pallet record: code, registered boxes and contents.',
 
+      'web.eyebrow': 'Live projects · Bakoware',
+      'web.title': 'Sites in production',
+      'gixson.body': 'A technology brand for small and medium businesses: websites, online stores with payments and shipping, ERP, CRM, HR and custom systems, each with a dashboard the client runs on their own.',
+      'gixson.cta': 'Visit gixson.com →',
+      'playera.body': 'A custom apparel marketplace in Hermosillo, Sonora: customers try their own logo on the garment before paying by card, OXXO or PayPal, and the team tracks each order to delivery from a role-based dashboard.',
+      'playera.cta': 'Visit playerafacil.com →',
+      'playera.shotAlt': 'PlayeraFácil home page: the tagline “Let\'s make your idea a T-shirt!”, the Try your logo and View catalog buttons, and a black polo with a chest logo and a color picker.',
+      'gixguard.body': 'A Bakoware security service that protects several apps at once, each with its own key: it certifies user-uploaded images, detects brute force, scans, bots and spam, blocks IPs and turns on a per-client anti-DDoS shield. Each app sees it as a Security tab in its dashboard.',
+      'gixguard.logoAlt': 'GixGuard logo',
+      'gixguard.shotAlt': 'GixGuard dashboard in Watching mode: requests per minute, blocked IPs, service status, a 24-hour traffic chart and the anti-DDoS shield control.',
+      'web.nota': 'Screenshots of each project.',
+
       'deliv.eyebrow': 'Evidence by unit',
       'deliv.title': 'My 4 published deliverables',
       'deliv.body': 'Each link leads to the public version I submitted at the end of that Unit, built on the same project.',
@@ -2128,6 +2203,9 @@ transform="translate(294.64 294.64) scale(0.6)"
   var tahurLogo = document.getElementById('tahurLogo');
   var estelaLogo = document.getElementById('estelaLogo');
   var estelaShot = document.getElementById('estelaShot');
+  var playeraShot = document.getElementById('playeraShot');
+  var gixguardLogo = document.getElementById('gixguardLogo');
+  var gixguardShot = document.getElementById('gixguardShot');
   var estelaLector = document.getElementById('estelaLector');
   var brandLink = document.querySelector('.brand-link');
   var metaDesc = document.querySelector('meta[name="description"]');
@@ -2157,6 +2235,9 @@ transform="translate(294.64 294.64) scale(0.6)"
     if (tahurLogo) tahurLogo.setAttribute('alt', t['tahur.logoAlt']);
     if (estelaLogo) estelaLogo.setAttribute('alt', t['estela.logoAlt']);
     if (estelaShot) estelaShot.setAttribute('alt', t['estela.shotAlt']);
+    if (playeraShot) playeraShot.setAttribute('alt', t['playera.shotAlt']);
+    if (gixguardLogo) gixguardLogo.setAttribute('alt', t['gixguard.logoAlt']);
+    if (gixguardShot) gixguardShot.setAttribute('alt', t['gixguard.shotAlt']);
     if (estelaLector) estelaLector.setAttribute('alt', t['estela.lectorAlt']);
     if (brandLink) brandLink.setAttribute('aria-label', t['brand.label']);
 
